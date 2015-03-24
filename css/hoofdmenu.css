@@ -1,0 +1,211 @@
+/* MENU */
+
+/*** MOBILE first ***/ 
+body {
+  background-color: #efefef;
+  color: rgba(0, 0, 0, 0.87);
+  position: relative;
+  padding: 0;
+  margin: 0; }
+
+.scrollMenu {
+	position:fixed;
+	width:100%;
+	z-index:2;}
+
+@media (min-width: 250px) {
+	.scrollMenu {
+	position:fixed;
+}
+}
+
+nav {
+  width: 100%;
+  max-height: 50px;
+  background-color: white;
+  transition-duration: 0.5s;
+  transition-timing-function: swing;
+  position: relative;
+  overflow: hidden;
+  z-index:4;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.1);}
+  nav.open {
+    max-height: 700px;
+    transition: max-height 0.5s ease-in; }
+  nav h2 {
+    transition: 0.5s;
+    position: absolute;
+    font-size: 1em;
+    top: 10px;
+    left: 32px;
+    font-weight: 300; }
+    nav h2 b {
+      font-weight: 500; }
+    @media (max-width: 768px) {
+      nav h2 {
+        font-size: 1.5em;
+        top: 10px; }
+        nav h2 span {
+          display: none; } }
+  nav ul {
+    padding-top: 50px; }
+    nav ul li {
+		font-family: 'Yanone Kaffeesatz', sans-serif;
+      list-style: none;
+      padding: 1em 2em 1em 1.5em;
+      transition: all 0.5s;
+	   }
+      nav ul li a {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 1.1em;
+        color: rgba(0, 0, 0, 0.87); float:right;}
+      nav ul li:hover {
+        background: #b86b84;
+		color:white; }
+        nav ul li:hover a {
+          text-decoration: none; }
+      nav ul li:active {
+        background: #b86b84;
+		color:white; }
+      nav ul li:last-child {
+        margin-bottom: 1em; }
+
+
+
+.navToggle {
+  position: absolute;
+  width: 30px;
+  height: 60px;
+  top: 20px;
+  right: 32px;
+  transition-duration: 0.5s;
+   }
+  .navToggle:hover {
+    cursor: pointer; }
+  .navToggle .icon-left {
+    transition-duration: 0.5s;
+    position: absolute;
+    height: 2px;
+    top: 12.5px;
+    width: 7.5px;
+    background-color: rgba(0, 0, 0, 0.87); }
+    .navToggle .icon-left:before {
+      transition-duration: 0.5s;
+      position: absolute;
+      width: 12.5px;
+      height: 2px;
+      background-color: rgba(0, 0, 0, 0.87);
+      content: "";
+      top: -5px; }
+    .navToggle .icon-left:after {
+      transition-duration: 0.5s;
+      position: absolute;
+      width: 7.5px;
+      height: 2px;
+      background-color: rgba(0, 0, 0, 0.87);
+      content: "";
+      top: 5px; }
+  .navToggle .icon-right {
+    transition-duration: 0.5s;
+    position: absolute;
+    height: 2px;
+    top: 12.5px;
+    width: 7.5px;
+    background-color: rgba(0, 0, 0, 0.87);
+    left: 7.5px; }
+    .navToggle .icon-right:before {
+      transition-duration: 0.5s;
+      position: absolute;
+      width: 7.5px;
+      height: 2px;
+      background-color: rgba(0, 0, 0, 0.87);
+      content: "";
+      top: -5px; }
+    .navToggle .icon-right:after {
+      transition-duration: 0.5s;
+      position: absolute;
+      width: 7.5px;
+      height: 2px;
+      background-color: rgba(0, 0, 0, 0.87);
+      content: "";
+      top: 5px; }
+  .navToggle.open .icon-left {
+    transition-duration: 0.5s;
+    background: transparent; }
+    .navToggle.open .icon-left:before {
+      transform: rotateZ(45deg) scaleX(1.4) translate(2px, 2px); }
+    .navToggle.open .icon-left:after {
+      transform: rotateZ(-45deg) scaleX(1.4) translate(2px, -2px); }
+  .navToggle.open .icon-right {
+    transition-duration: 0.5s;
+    background: transparent; }
+    .navToggle.open .icon-right:before {
+      transform: rotateZ(-45deg) scaleX(1.4) translate(-2px, 2px); }
+    .navToggle.open .icon-right:after {
+      transform: rotateZ(45deg) scaleX(1.4) translate(-2px, -2px); }
+@media (max-width: 460px) {
+	.navToggle {
+  position: absolute;
+  width: 15px;
+  height: 30px;
+  top:8px;
+  right: 25px;
+  transition-duration: 0.5s;
+   }
+}
+.x {
+  padding: 0;
+  margin: 0; }
+ 
+.menu { display:none;}
+  
+@media (min-width: 821px) {
+
+nav { display:none;}
+.menu { 
+	width:100%;
+	display:block;
+	height:7em;
+	background-color:#fff;
+	position:relative;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.1);}
+}
+
+.menu h2 {
+	font-size:1.8em;
+	display:block;
+	float:left;
+	padding-left:0.3em}
+.menu ul {
+	float:right;
+	padding-right:0.30em;
+	padding-top: 4em;
+	}
+.menu ul li {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size:1.4em; 
+	color:rgba(0, 0, 0, 0.87); 
+	text-decoration:none;
+	list-style-type:none;
+	display:inline-block;
+	float:left;
+	padding-top:0.70em;
+}
+.menu ul li a  {
+	color:rgba(0, 0, 0, 0.87);  
+	padding:0 0.5em;
+	float:right;
+	text-decoration:none;
+}
+.menu ul li a:hover {
+	color:rgba(0,97,228,1.00);
+}  
+}
+
+
+
+
+
+
+/*# sourceMappingURL=hoofdmenu.css.map */
