@@ -1,0 +1,422 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* GENERAL */
+
+body {
+	width:100%;
+	font-size:18px;
+	margin: 0;
+    padding: 0;
+}
+em {
+    font-style:normal;
+    font-weight:200;
+    font-variant:small-caps;
+    font-size:1.375em;}
+strong {
+    font-size:1.5em;
+    font-weight:600;
+    font-variant:small-caps;}
+
+#jobprofiel li {
+    list-style-type:circle;
+    margin-left:8%;
+}
+
+/* banner bovenaan */
+#sitenaam {
+	font-size:1.8em;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-weight:bold;
+	padding-left:0.8em;}
+
+#sitenaam>img {
+	height:3em;
+}
+#tagContainer {
+	width: 37.50em ;
+	height: 30em;
+	top: 8.5em;
+	bottom: 10em;
+	margin: 0 auto;
+	position:relative;
+
+
+
+
+}
+.cloud {
+	position: absolute;
+
+
+}
+
+
+
+/*.imagecloud {*/
+
+	/*margin-top: 9.5em;*/
+	/*position:absolute;*/
+	/*top:50%;*/
+	/*left:50%;*/
+	/*-ms-transform: translate(-50%, -50%);*/
+	/*-webkit-transform:translate(-50%, -50%);*/
+	/*transform:translate(-50%, -50%);*/
+
+
+
+/*}*/
+
+
+/*** achtergrond ***/
+.slide1, .slide2, .slide3, .slide4, .slide5, .slide6, .slide7, .slide8, .slide9, .slide10 .slideA, .slideB { width: 100%; }
+
+.slideA, .slide1, .slide3, .slide5, .slide7, .slide9 {
+    background-color:#fff;
+    color: #fff;
+    height: 600px;
+    margin: 0 auto;
+    padding: 150px 0 260px 0;
+    background-size: cover;
+    width: 80%;
+}
+
+.slideA {
+    background:url('../img/start.png') 50%  0 no-repeat fixed;
+    height: 750px;
+	position:relative;
+	z-index:0;
+}
+.slide1{
+    background:url('../img/startVix.jpg') 50% 0 no-repeat fixed;
+}
+.slide3{
+    background: url('../img/antwerp.jpg') 50% 0 no-repeat fixed;
+}
+.slide5{
+    background: url('../img/zee_.jpg') 50% 0 no-repeat fixed;
+}
+.slide7 {
+    background: url('../img/hart.jpg') 50% 0 no-repeat fixed;
+}
+.slide9 {
+    background: url('../img/zee.jpg') 50% 0 no-repeat fixed;
+}
+
+.slideB {
+	background-color:#eee;
+}
+
+.slideA>.jumbotron {
+		color:#000000;
+		margin-top:490px;
+		text-shadow:none;
+		}
+.slideB>.jumbotron {
+		color:#000000; 
+		margin: 0;
+		text-shadow:none;}
+
+.slide2, .slide4, .slide6, .slide8, .slide10 {
+    background-color: #fff;
+    color: #333333;
+    height: auto;
+    width: 80%;
+    overflow: hidden;
+    padding: 3.125em 1.25em 3.125em 2.3em;
+    margin: 0 auto;
+}
+
+.jumbotron {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 3.5em;
+	font-weight:bolder;
+	color:#EFEFEF ;
+	text-shadow: black 0.3em 0.3em 0.3em;
+	background:transparent;
+	padding:0 0.5em 0 0.9em;
+	margin:100px auto;
+	text-align:center;
+}
+
+
+/*@media (max-width: 300px) {
+	.slide1, .slide2 .slide3 .slide4{ width: 100%; }
+.slide1{
+    background:url('../img/zee2.jpg') 50% 0 no-repeat;
+	position:relative;
+	background-color:#fff;
+    color: #fff;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+}
+ 
+.slide2, .slide4, .slide6, .slideB{
+    background-color: #fff;
+    color: #333333;
+    height: auto;
+	width: 100%;
+    overflow: hidden;
+  
+}
+
+ 
+.slide3{
+    background: url('../img/antwerp.jpg') 50% 0 no-repeat;
+	position:relative;
+	background-color:#fff;
+    color: #fff;
+    height: 300px;
+	margin:0;
+    padding: 0;
+    background-size: cover;
+}
+
+.slide5{
+    background: url('../img/hart3.jpg') 50% 0 no-repeat;
+	background-color:#fff;
+    height: 300px;
+    margin: 0;
+    padding:0;
+    color: #fff;
+    background-size: cover;
+}
+
+.jumbotron {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 3.5em;
+	font-weight:bolder;
+	color: white;
+	text-shadow: black 0.3em 0.3em 0.3em;
+	background:transparent;
+	padding:0 0.5em 0 0.9em;
+	margin:0 auto;
+	text-align:center;
+}
+}*/
+
+/*** Sidebar ***/
+.sidebar {
+	width:1.25em;
+	height:6.9em;
+	background:#7f7f7f;
+	background:rgba(0,0,0,0.5);
+	position:fixed;
+	top:11em;
+	right:0;
+	float:left;
+	z-index:1;
+}
+
+.sidebar ul {
+	padding-right:0.250em;
+	float:right;
+	display:block;
+}
+
+.sidebar ul li {
+	list-style-type:none;
+	display:inline-block;
+	padding-right:0.125em;
+}
+
+.sidebar ul li a {
+	color:#BEBEBE;
+	text-decoration:none;
+	display:inline-block;
+}
+
+
+/***** contact *****/
+#contacticon {
+	width:1.6em;
+	height:1.6em;
+	padding:0.125em;
+	display:inline-block;
+	float:left;}
+
+footer { 
+width:100%;
+height:2em;
+background:rgba(255,255,255,1.00);
+box-shadow: 0px -2px -4px rgba(0, 0, 0, 0.1);
+position:fixed;
+bottom:0;
+font-size:12px;
+
+}
+
+
+.contact {
+	width:1.8em;
+	height:9.6em;
+	background:#7f7f7f;
+	background:rgba(0,0,0,0.5);
+	position:fixed;
+	top:11em;
+	left:0;
+	float:left;
+	z-index:1;
+}
+.contact ul {
+	list-style-type:none;
+	padding:1.5px;
+	}
+.contact ul li {
+	display:block;
+	float:left;
+}
+.contact ul li a {}
+
+.printZiet {display:none;}
+
+
+
+
+/*** Tooltips ***/
+.tooltip-inner {
+	background-color:rgba(122,122,122,0.68);
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-weight:200;
+}
+
+
+/*** PrintKnop ***/
+.printKnop {
+	display:none;
+}
+
+.btn-default {
+  color: #fff;
+  	background:rgba(0,0,0,0.5);
+}
+
+
+/*clearfix */
+.clearfix:before, .clearfix:after {
+	content:" ";
+	display:table;
+}
+.clearfix:after{
+	clear:both;
+}
+/*enkel voor IE6/7 */
+.clearfix {*zoom: 1;}
+/*
+@media (min-width: 821px) {
+.printKnop {
+	display:block;
+	float:right;
+	font-family: inherit;
+}
+	
+*//*** achtergrond ***//*
+.slide2, .slide4, .slide6, .slideB{
+    background-color: #fff;
+    color: #333333;
+    height: auto;
+	width: 100%;
+    overflow: hidden;
+    padding: 3.125em 1.56em 3.125em 2.75em;
+}
+.slide1, .slide3, .slide5{
+    height: 450px;
+}
+
+.jumbotron {
+	padding-top:1em;
+}
+
+
+*//*** Sidebar ***//*
+.sidebar {
+	width:1.56em;
+	height:8.625em;
+	background:#7f7f7f;
+	background:rgba(0,0,0,0.5);
+	position:fixed;
+	top:11em;
+	right:0;
+	float:right;
+	z-index:1;
+}
+
+.sidebar ul {
+	padding-right:0;
+	float:right;
+}
+
+.sidebar ul li {
+	list-style-type:none;
+	
+}
+
+.sidebar ul li a {
+	color:#BEBEBE;
+	text-decoration:none;
+	font-size:1.25em;
+	display:inline-block;
+}
+
+
+*//***** contact *****//*
+#contacticon {
+	width:2em;
+	height:2em;
+	padding:0.156em;
+	display:inline-block;
+	float:left;}
+
+
+
+.contact {
+	width:2.3em;
+	height:12.5em;
+	background:#7f7f7f;
+	background:rgba(0,0,0,0.5);
+	position:fixed;
+	top:11em;
+	left:0;
+	float:left;
+	z-index:1;
+}
+.contact ul {
+	list-style-type:none;
+	padding:1.5px;
+	}
+.contact ul li {
+	display:block;
+	float:left;
+}
+.contact ul li a {}
+}
+
+@media (min-width: 1200px) {
+.slide2, .slide4, .slide6, .slideB{
+    padding: 3.125em 10%;
+	max-width:80%;
+	margin:0 auto;
+}
+.slide1, .slide3, .slide5, .slideA{
+    height: 500px;
+	max-width:80%;
+	margin:0 auto;
+}	
+
+footer {
+	margin:0 auto;
+	padding:0 40%;
+}
+
+}*/
+
+
+
+
+
+
+
+

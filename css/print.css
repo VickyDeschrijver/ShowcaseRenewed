@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+nav { display:none;}
+.menu {display:none;}
+.sidebar {display:none;}
+.printKnop {display:none;}
+
+
+html, body {
+	margin:0;
+	width:100%;
+	padding:0;
+	color:#000000;
+	font-size:12px;
+}
+
+.contact {
+	float:none;
+}
+.contact ul li {
+	float:none;
+	list-style-type:none;
+}
+#contacticon {
+	width:5%;
+	height:5%;
+}
+
+.printziet {display:block;}
+
+.jumbotron, h3 {
+	font-size:18px;
+	font-weight:bold;
+	padding:0;
+	margin:0;
+}
+
+.slide1, .slide3, .slide5 { 
+	background-image:none;
+}
+
+.cv .jumbotron {
+	position:absolute;
+	top:0;
+	font-size:20px;
+	text-align:center;
+}
+
+.slide1 .jumbotron {
+	padding: 60px 0 0 0;
+}
+#contactme {
+	display:none;
+}
+
+
+/*clearfix */
+.clearfix:before, .clearfix:after {
+	content:" ";
+	display:table;
+}
+.clearfix:after{
+	clear:both;
+}
+/*enkel voor IE6/7 */
+.clearfix {*zoom: 1;}
+
+
+
+
+
